@@ -55,6 +55,11 @@ class _WhatsappState extends State<Whatsapp> {
           ),
         ],
       ),
+      body: Column(
+        children: [
+          //First let's create the Story time line container
+        ],
+      ),
     );
   }
 }
