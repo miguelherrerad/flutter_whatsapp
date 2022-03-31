@@ -25,7 +25,7 @@ class _WhatsappState extends State<Whatsapp> {
   var containerRadius = Radius.circular(30.0);
   //Adding a list of image URL to simulate the avatar picture
   List<String> imageUrl = [
-        "https://i.pinimg.com/originals/2e/2f/ac/2e2fac9d4a392456e511345021592dd2.jpg",
+    "https://i.pinimg.com/originals/2e/2f/ac/2e2fac9d4a392456e511345021592dd2.jpg",
     "https://randomuser.me/api/portraits/men/86.jpg",
     "https://randomuser.me/api/portraits/women/80.jpg",
     "https://randomuser.me/api/portraits/men/43.jpg",
@@ -35,9 +35,26 @@ class _WhatsappState extends State<Whatsapp> {
     "https://randomuser.me/api/portraits/women/1.jpg",
     "https://randomuser.me/api/portraits/men/0.jpg"
   ];
-  ]
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: mainColor,
+      appBar: AppBar(
+        elevation: 0.0,
+        title: Text("WhatsApp Clone"),
+        backgroundColor: mainColor,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.search),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.more_horiz),
+          ),
+        ],
+      ),
+    );
   }
 }
