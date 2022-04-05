@@ -58,6 +58,26 @@ class _WhatsappState extends State<Whatsapp> {
       body: Column(
         children: [
           //First let's create the Story time line container
+          Container(
+            height: 100.0,
+            child: Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  //Let's create a custom widget for our story button
+                  storyButton(imageUrl[0], "Davie yo"),
+                  storyButton(imageUrl[1], "Jack Brell"),
+                  storyButton(imageUrl[2], "Anjie wo"),
+                  storyButton(imageUrl[3], "Joseph"),
+                  storyButton(imageUrl[4], "Juline kujo"),
+                  storyButton(imageUrl[5], "Juline kujo"),
+                  storyButton(imageUrl[6], "Juline kujo"),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
