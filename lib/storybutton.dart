@@ -11,7 +11,10 @@ Widget storyButton(String imgUrl, String userName) {
       SizedBox(
         height: 5.0,
       ),
-      
+      Text(
+        userName,
+        style: TextStyle(color: Colors.white),
+      ),
     ],
   ),)
 }
