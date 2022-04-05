@@ -5,8 +5,10 @@ Widget storyButton(String imgUrl, String userName) {
   child: Column(
     children: [
       CircleAvatar(
-        backgroundImage: NetworkImage,
-      )
+        backgroundImage: NetworkImage(imgUrl),
+        radius: 26.0,
+      ),
+      
     ],
   ),)
 }
