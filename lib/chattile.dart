@@ -8,7 +8,13 @@ Widget chatTile(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
-          children: [],
+          children: [
+            CircleAvatar(
+              backgroundImage: NetworkImage(imgUrl),
+              radius: 28.0,
+            ),
+            
+          ],
         ),
 
         ),
