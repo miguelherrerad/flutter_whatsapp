@@ -8,6 +8,9 @@ Widget storyButton(String imgUrl, String userName) {
         backgroundImage: NetworkImage(imgUrl),
         radius: 26.0,
       ),
+      SizedBox(
+        height: 5.0,
+      ),
       
     ],
   ),)
