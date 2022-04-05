@@ -2,21 +2,29 @@ import 'package:flutter/material.dart';
 
 Widget chatTile(
     String imgUrl, String userName, String msg, String date, bool seen) {
-      return InkWell(
-        onTap: () {},
-        child: Padding(padding: const EdgeInsets.symmetric(vertical: 12.0),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            CircleAvatar(
-              backgroundImage: NetworkImage(imgUrl),
-              radius: 28.0,
-            ),
-            
-          ],
-        ),
-
-        ),
-      )
-    }
+  return InkWell(
+    onTap: () {},
+    child: Padding(
+      padding: const EdgeInsets.symmetric(vertical: 12.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          CircleAvatar(
+            backgroundImage: NetworkImage(imgUrl),
+            radius: 28.0,
+          ),
+          SizedBox(
+            width: 8.0,
+          ),
+          Expanded(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [],
+          ))
+        ],
+      ),
+    ),
+  );
+}
