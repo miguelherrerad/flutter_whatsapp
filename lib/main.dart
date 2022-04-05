@@ -78,6 +78,36 @@ class _WhatsappState extends State<Whatsapp> {
               ),
             ),
           ),
+
+          //Now let's create our chat timeline
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    topLeft: containerRadius, topRight: containerRadius),
+              ),
+              child: Padding(
+                padding:
+                    const EdgeInsets.only(left: 12.0, right: 12.0, top: 10.0),
+                child: ListView(
+                  children: [
+                    //Now let's create our chat tile custom widget
+                    chatTile(imageUrl[0], "userName", "msg", "9Am", false),
+                    chatTile(imageUrl[1], "userName", "msg", "8Am", true),
+                    chatTile(imageUrl[2], "userName", "msg", "6Am", true),
+                    chatTile(
+                        imageUrl[3], "userName", "msg", "Yesterday", false),
+                    chatTile(
+                        imageUrl[5], "userName", "msg", "Yesterday", false),
+                    chatTile(imageUrl[4], "userName", "msg", "San 20", true),
+                    chatTile(imageUrl[6], "userName", "msg", "San20", true),
+                    chatTile(imageUrl[7], "userName", "msg", "San20", true),
+                  ],
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
